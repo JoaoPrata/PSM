@@ -1,0 +1,11 @@
+﻿@model agap2it.labs.projects.PSM.DataAccess.DataAccessModels.ParkingSpotSectionFloorModel;
+
+<input method="post" type="button" value="Take Ticket" asp-action="TakeTicket" />
+
+
+@{
+    <div>
+        Number: @Model.Number - Section: @Model.Section (Floor @Model.Floor)
+    </div>
+
+}

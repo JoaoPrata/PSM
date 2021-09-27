@@ -1,0 +1,20 @@
+﻿@model IEnumerable<agap2it.labs.projects.PSM.DataAccess.DataAccessModels.ParkingSpotSectionFloorModel>;
+
+<ul>
+    @foreach (var item in Model)
+    {
+        if (item.IsVacant)
+        {
+            <li class="bg-success">
+                Number: @item.Number - Section: @item.Section (Floor @item.Floor) VACANT
+            </li>
+        }
+        else
+        {
+            <li class="bg-warning">
+                Number: @item.Number - Section: @item.Section (Floor @item.Floor) OCCUPIED
+            </li>
+        }
+    }
+</ul>
+

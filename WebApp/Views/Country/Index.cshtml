@@ -1,0 +1,8 @@
+﻿@model IEnumerable<agap2it.labs.projects.PSM.Data.Country>;
+
+@foreach(var item in Model)
+{
+    <div class="bg-success">
+        @item.Name (@item.CountryCode)
+    </div>
+}
